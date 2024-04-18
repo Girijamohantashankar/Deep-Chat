@@ -15,8 +15,8 @@ import welcomeImage from "../image/WelCome.gif";
 import io from "socket.io-client";
 import UpdateGroupChatModal from "./miscellaneous/UpdateGroupChatModal";
 import { ChatState } from "../Context/ChatProvider";
-const ENDPOINT = process.env.NODE_ENV === "production" ? "https://your-production-endpoint" : "http://localhost:5000";
-
+const ENDPOINT = process.env.NODE_ENV === "production" ? "" : "http://localhost:5000";
+// girija hosted
 var socket, selectedChatCompare;
 
 const SingleChat = ({ fetchAgain, setFetchAgain }) => {
